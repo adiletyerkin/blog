@@ -38,3 +38,6 @@ Route::post('/registration/submit', 'RegistrationController@submit' )->name('con
 
 
 
+Route::get('/login', function () {
+    return view('login');
+});
