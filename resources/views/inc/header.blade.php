@@ -6,6 +6,5 @@
     <a class="p-2 text-dark" href="/delivery">Доставка</a>
     <a class="p-2 text-dark" href="/contact">Контакты</a>
     <a class="p-2 text-dark" href="/registration">Регистрация</a>
-    <a class="p-2 text-dark" href="/login">Войти</a>
   </nav>
 </div>
