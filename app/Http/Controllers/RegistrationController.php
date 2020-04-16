@@ -31,7 +31,24 @@ class RegistrationController extends Controller{
     }
 
 
+// для  LOGIN
 
 
-    
+    //     public function submit2(RegistrationRequest $req ){
+
+    //     $registration2 = new RegistrationModel();
+    //     $registration2-> email = $req->input('email');
+    //     $registration2 -> password = $req->input('password');
+
+
+    //     $registration -> save();
+
+    //     return redirect()-> route('home')->with('success', 'Вы зашли!');
+
+    // }
+
+
+
+
+
 }
