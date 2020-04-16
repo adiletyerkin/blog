@@ -1,13 +1,13 @@
 @extends('layouts.app')
 
 @section('title-block')
-	RLOG IN PAGE
+	LOG IN PAGE
 @endsection
 
 @section('content')
 	<h1>Log IN</h1>
 
-	<form action="{{ route('login')}}" method="post">
+	<form action="{{ route('login')}}" method="get">
 		@csrf 
 		<div class="form-group">
 			<label for="email">Адрес e-mail: </label>

@@ -29,4 +29,9 @@ class RegistrationController extends Controller{
     	return redirect()-> route('home')->with('success', 'Регистрация прошло успешно ');
 
     }
+
+
+
+
+    
 }
