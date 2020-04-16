@@ -8,7 +8,7 @@
 	<h1>Registration</h1>
 
 	<form action="{{ route('contaact-form')}}" method="post">
-		@csrf <!-- защищенный ключ -->
+		@csrf 
 		<div class="form-group">
 			<label for="name">Имя: </label>
 			<input type="text" name="name" placeholder="введите имя" id="name" class="form-control">
