@@ -21,6 +21,7 @@ class RegistrationController extends Controller{
     	$registration -> name = $req->input('name');
     	$registration -> email = $req->input('email');
     	$registration -> phone = $req->input('phone');
+        $registration -> password = $req->input('password');
 
 
     	$registration -> save();
