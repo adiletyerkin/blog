@@ -35,3 +35,7 @@ Route::get('/registration', function () {
 });
 
 Route::post('/registration/submit', 'RegistrationController@submit' )->name('contaact-form');
+
+Route::get('/login', function () {
+    return view('login');}->name('login');
+
