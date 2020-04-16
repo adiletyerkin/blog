@@ -27,7 +27,8 @@ class RegistrationRequest extends FormRequest
 
             'email' => 'required|email',
             'name' => 'required|min:2|max:8',
-            'phone' => 'required|min:7'
+            'phone' => 'required|min:7',
+            'password' => ['required', 'string', 'min:8', 'confirmed']
 
     
             
@@ -43,10 +44,12 @@ class RegistrationRequest extends FormRequest
 
     public function messages(){
         return [
-            'name.required' => 'Поля имя является обязательным !',
-            'email.required' => 'Поля email является обязательным !',
-            'email.email' => 'Поля email не правильно заполнена!',
-            'phone.required' => 'Поля phone является обязательным !'
+            'name.required' => 'Поле имя является обязательным !',
+            'email.required' => 'Поле email является обязательным !',
+            'email.email' => 'Поле email не правильно заполнена!',
+            'phone.required' => 'Поле phone является обязательным !',
+            'password.required' => 'Поле "пароль" является обязательным !',
+            'password.confirmed' => 'Потвердите свой пароль !'
 
         ];
     }
