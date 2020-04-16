@@ -18,9 +18,8 @@ class CreateRegistrationModelsTable extends Migration
             $table->string('name');
             $table->string('email');
             $table->string('phone');
-            
-            $table->timestamps();
             $table->string('password');
+            $table->timestamps();
 
         });
     }
