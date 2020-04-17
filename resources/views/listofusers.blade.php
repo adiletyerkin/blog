@@ -21,7 +21,7 @@
     </tr>
   </thead>
   <tbody>
-  	@foreach($data as $dat)
+  	@foreach($registrationData as $dat)
     <tr>
       <th scope="row">{{ $dat -> id}}</th>
       <td>{{ $dat -> name}}</td>

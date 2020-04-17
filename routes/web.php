@@ -34,4 +34,4 @@ Route::get('/login', function () {
 });
 
 
-Route::post('/listofusers', 'RegistrationController@allData' )->name('listofusers');
+Route::get('/listofusers', 'RegistrationController@allData' )->name('listofusers');
