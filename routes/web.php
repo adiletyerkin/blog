@@ -24,7 +24,7 @@ Route::get('/registration', function () {
     return view('registration');
 });
 
-Route::post('/registration/submit', 'RegistrationController@submit' )->name('contact-form');
+Route::post('/registration/submit', 'RegistrationController@submit' )->name('contaact-form');
 
 
 
