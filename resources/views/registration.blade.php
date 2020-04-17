@@ -30,7 +30,7 @@
 			<input type="password" name="password" placeholder="пароль" id="password" class="form-control">
 		</div>
 		<div class="form-group">
-			<label for="password_confirmation ">Повторите Пароль: </label>
+			<label for="password_confirmation ">Повторите пароль: </label>
 			<input type="password" name="password_confirmation" placeholder="повторите пароль" id="password_confirmation " class="form-control">
 		</div>
 		<button type="submit" name="button" class="btn btn-success">Регистрация</button>
