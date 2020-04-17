@@ -62,8 +62,6 @@ class RegistrationController extends Controller{
         $registration =  RegistrationModel():: find($id);
         return view('edituser', compact('registration'));
 
-
-
     }
 
         public function update(Request  $req, $id){
