@@ -34,10 +34,13 @@ Route::get('/registration', function () {
     return view('registration');
 });
 
-Route::post('/registration/submit', 'RegistrationController@submit' )->name('contaact-form');
+Route::post('/registration/submit', 'RegistrationController@submit' )->name('contact-form');
+
 
 
 
 Route::get('/login', function () {
     return view('login');
 });
+
+Route::post('/listofusers', 'RegistrationController@allData' )->name('listofusers');

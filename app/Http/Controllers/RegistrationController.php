@@ -19,6 +19,7 @@ class RegistrationController extends Controller{
 
     	$registration = new RegistrationModel();
     	$registration -> name = $req->input('name');
+        $registration -> surname = $req->input('surname');
     	$registration -> email = $req->input('email');
     	$registration -> phone = $req->input('phone');
         $registration -> password = $req->input('password');
@@ -47,7 +48,15 @@ class RegistrationController extends Controller{
 
     // }
 
+    public function allData(){
+         $registrationData = RegistrationModel :: all();
+        // $registrationData = new RegistrationModel;
+        // $registrationData -> all();
+        // return view('contact-data', compact('registrationData'));
+        return view('listofusers', compact('registrationData'));
 
+
+    }
 
 
 
