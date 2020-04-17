@@ -58,12 +58,29 @@ class RegistrationController extends Controller{
 
     }
 
-    public function edit($id){
+    public function edituser($id){
         $registration =  RegistrationModel():: find($id);
-        return view('edituser', compact('registrationData'));
+        return view('edituser', compact('registration'));
 
 
 
+    }
+
+        public function update(Request  $req, $id){
+
+           $registration =  RegistrationModel()::find($id);
+
+            $registration -> name = $req->input('name');
+            $registration -> surname = $req->input('surname');
+            $registration -> email = $req->input('email');
+            $registration -> phone = $req->input('phone');
+            $registration -> password = $req->input('password');
+
+
+            $registration -> save();
+
+           return redirect()-> route('home')->with('success', 'ОБНОВЛЕНИЕ прошло успешно ');
+     
     }
 
 

@@ -28,7 +28,7 @@
       <td>{{ $dat -> surname}}</td>
       <td>{{ $dat -> email}}</td>
       <td>{{ $dat -> phone}}</td>
-      <td><a href="{{route ('edit', $registrationData -> $id )}}"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+      <td><a href= "{{ route ('edituser', $dat-> id )}}"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
         or 
         <a href=""><i class="fa fa-trash" aria-hidden="true"></i></a>
       </td>

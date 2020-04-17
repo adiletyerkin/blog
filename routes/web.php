@@ -35,3 +35,8 @@ Route::get('/login', function () {
 
 
 Route::get('/listofusers', 'RegistrationController@allData' )->name('listofusers');
+
+
+Route::get('/edituser/{id}', 'RegistrationController@edituser' )->name('edituser');
+
+Route::post('/update/{id}', 'RegistrationController@update' )->name('update');
