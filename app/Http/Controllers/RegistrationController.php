@@ -64,7 +64,7 @@ class RegistrationController extends Controller{
 
     }
 
-    public function update(Request  $req, $id){
+    public function update(RegistrationRequest  $req, $id){
 
            $registration =  RegistrationModel()::find($id);
 
