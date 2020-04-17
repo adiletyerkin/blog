@@ -16,6 +16,7 @@ class CreateRegistrationModelsTable extends Migration
         Schema::create('registration_models', function (Blueprint $table) {
             $table->id();
             $table->string('name');
+            $table->string('surname');
             $table->string('email');
             $table->string('phone');
             $table->string('password');

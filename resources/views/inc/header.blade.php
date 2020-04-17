@@ -7,5 +7,7 @@
     <a class="p-2 text-dark" href="/contact">Контакты</a>
     <a class="p-2 text-dark" href="/registration">Регистрация</a>
     <a class="p-2 text-dark" href="/login">Войти</a>
+     <a class="p-2 text-dark" href="{{ route('contact-data') }}">Список</a>
+
   </nav>
 </div>
