@@ -58,6 +58,15 @@ class RegistrationController extends Controller{
 
     }
 
+    public function edit($id){
+        $registration =  RegistrationModel():: find($id);
+        return view('edituser', compact('registrationData'));
+
+
+
+    }
+
+
 
 
 }
