@@ -17,6 +17,7 @@
       <th scope="col">Surname</th>
       <th scope="col">email</th>
       <th scope="col">phone</th>
+      <th scope="col">Update</th>
     </tr>
   </thead>
   <tbody>
