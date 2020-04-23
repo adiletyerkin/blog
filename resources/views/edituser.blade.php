@@ -7,7 +7,7 @@
 @section('content')
 	<h1>Edit</h1>
 
-	<form action="{{ route('update', $registration -> $id)}}" method="post">
+	<form action="{{ route('update', $registration -> id)}}" method="post">
 		@csrf 
 		<div class="form-group">
 			<label for="name">Имя: </label>
@@ -27,11 +27,11 @@
 		</div>
 		<div class="form-group">
 			<label for="password">Пароль: </label>
-			<input type="password" name="password" placeholder="пароль" id="password" class="form-control"  value="{{$registration -> password}}">
+			<input type="password" name="password" placeholder="пароль" id="password" class="form-control" >
 		</div>
 		<div class="form-group">
 			<label for="password_confirmation ">Повторите пароль: </label>
-			<input type="password" name="password_confirmation" placeholder="повторите пароль" id="password_confirmation " class="form-control"  value="{{$registration -> password_confirmation}}">
+			<input type="password" name="password_confirmation" placeholder="повторите пароль" id="password_confirmation " class="form-control"  
 		</div>
 		<button type="submit" name="button" class="btn btn-success">Отправить</button>
 	</form>

@@ -60,13 +60,14 @@ class RegistrationController extends Controller{
 
     public function edituser($id){
         $registration =  RegistrationModel()::find($id);
+        $registration =  RegistrationModel::find($id);
         return view('edituser', compact('registration'));
 
     }
 
     public function update(RegistrationRequest  $req, $id){
 
-           $registration =  RegistrationModel()::find($id);
+           $registration =  RegistrationModel::find($id);
 
             $registration -> name = $req->input('name');
             $registration -> surname = $req->input('surname');
@@ -79,6 +80,13 @@ class RegistrationController extends Controller{
 
            return redirect()-> route('home')->with('success', 'ОБНОВЛЕНИЕ прошло успешно ');
      
+    }
+
+
+    public function delete($id){
+        RegistrationModel::find($id)->delete();
+        return redirect( route( 'home')) -> with('success', 'User delete successfully!');
+
     }
 
 

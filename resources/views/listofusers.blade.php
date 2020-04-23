@@ -30,7 +30,10 @@
       <td>{{ $dat -> phone}}</td>
       <td><a href= "{{ route ('edituser', $dat-> id )}}"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
         or 
-        <a href=""><i class="fa fa-trash" aria-hidden="true"></i></a>
+        <a href= "{{ route ('delete', $dat-> id )}}"><i class="fa fa-trash" aria-hidden="true"></i></a>
+
+
+
       </td>
     </tr>
     @endforeach
@@ -42,3 +45,19 @@
 
 @endsection
 	
+
+
+<!--         <form method="POST" id="delete-form- {{ $dat -> id }}" action="{{ route('delete', $dat -> id ) }}" style="display: none">
+          {{csrf_field()}}
+          {{method_field('delete')}}
+          
+        </form>
+
+        <button onclick="if (confirm('Вы уверены что хотите удалить этого пользователя ?!')) {
+          event.preventDefault();
+          document.getElementByID('delete-form-{{ $dat -> id}}').submit(); } else{
+             event.preventDefault();
+          }
+
+
+        "><i class="fa fa-trash" aria-hidden="true"></i></button> -->
