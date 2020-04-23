@@ -49,10 +49,7 @@ class RegistrationController extends Controller{
     // }
 
     public function allData(){
-         $registrationData = RegistrationModel :: all();
-        // $registrationData = new RegistrationModel;
-        // $registrationData -> all();
-        // return view('contact-data', compact('registrationData'));
+         $registrationData = RegistrationModel :: paginate(1);
         return view('listofusers', compact('registrationData'));
 
 
