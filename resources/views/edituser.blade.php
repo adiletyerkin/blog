@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.appmain')
 
 @section('title-block')
 	Registration PAGE

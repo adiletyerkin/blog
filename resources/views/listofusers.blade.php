@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.appmain')
 
 @section('title-block')
 	List of users
@@ -30,11 +30,7 @@
       <td>{{ $dat -> phone}}</td>
       <td><a href= "{{ route ('edituser', $dat-> id )}}"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
         or 
-        <a href= "{{ route ('delete', $dat-> id )}}"><i class="fa fa-trash" aria-hidden="true"></i></a>
-
-
-
-      </td>
+        <a href= "{{ route ('delete', $dat-> id )}}"><i class="fa fa-trash" aria-hidden="true"></i></a> </td>
     </tr>
     @endforeach
   </tbody>
@@ -42,8 +38,6 @@
 {{ $registrationData -> links() }}
 
 </div>
-
-
 
 @endsection
 	
